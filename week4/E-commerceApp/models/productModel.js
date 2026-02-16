@@ -1,0 +1,21 @@
+import { Schema, model } from "mongoose";
+
+// PRODUCT SCHEMA 
+const productSchema = new Schema({
+  name: {
+    type: String,
+    required: [true, "Product name is required"]
+  },
+  price: {
+    type: Number,
+    required: [true, "Product price is required"]
+  },
+  brand: {
+    type: String,
+    required: [true, "brand is required"]
+  }
+    
+}, { timestamps: true } );
+
+// PRODUCT MODEL 
+export const Product = model("Product", productSchema);

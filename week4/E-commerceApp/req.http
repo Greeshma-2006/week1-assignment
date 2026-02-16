@@ -1,0 +1,93 @@
+### CREATE PRODUCT 1
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "price": 75000,
+  "brand": "HP"
+}
+
+
+### CREATE PRODUCT 2
+
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "Mobile",
+  "price": 30000,
+  "brand": "Samsung"
+}
+
+
+### CREATE PRODUCT 3
+
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "Headphones",
+  "price": 5000,
+  "brand": "Boat"
+}
+
+
+### GET ALL PRODUCTS
+
+GET http://localhost:5000/api/products
+
+
+
+### CREATE user
+
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+  "name": "greeshma",
+    "email": "gree@gmail.com",
+    "password": "123456",
+    "cart":[]
+  
+}
+
+### GET ALL users
+
+GET http://localhost:5000/api/users
+
+###req to add product to cart
+PUT  http://localhost:5000/api/users/698185cd79fcfd6aba27173e/cart
+Content-Type: application/json
+
+{
+  "productId": "6981863379fcfd6aba271740",
+  "quantity": 1,
+  "productId":"698194312082eda5aa7f8e46"
+}
+
+###read user by id 
+GET http://localhost:5000/api/users/698185cd79fcfd6aba27173e
+###new user 
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+  "name": "test",
+  "email": "test@gmail.com",
+  "password": "123456"
+}
+
+
+### CREATE PRODUCT 4
+
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "tv",
+  "price": 8000,
+  "brand": "lg"
+}
+
+
