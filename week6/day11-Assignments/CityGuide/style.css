@@ -1,0 +1,95 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+/* full page layout */
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* top header bar */
+.header-bar{
+  background:#f4f4f4;
+  padding:15px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* nav links style */
+.menu a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#3bb4a4;
+  font-size:14px;
+  font-weight:600;
+}
+
+/*  banner section */
+.banner{
+  background:#3bb4a4;
+  color:white;
+  text-align:center;
+  padding:80px 8%;
+}
+
+/* top icon */
+.main-icon{
+  width:95px;
+  margin-bottom:20px;
+}
+
+/* banner heading */
+.banner h1{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+/* bottom content section */
+.content-area{
+  display:flex;
+  flex-wrap:wrap;
+  gap:40px;
+  padding:70px 8%;
+  background:#eee;
+  flex:1;
+}
+
+.col{
+  flex:1;
+  min-width:260px;
+}
+
+/* food image container */
+.food-box{
+  background:#3bb4a4;
+  padding:30px;
+  margin:20px 0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  border-radius:8px;
+}
+
+/* food icons */
+.food-box img{
+  width:80px;
+  margin:auto;
+}
+
+/* mobile adjustment */
+@media(max-width:768px){
+
+  .menu{
+    display:none;
+  }
+
+  .banner h1{
+    font-size:28px;
+  }
+}

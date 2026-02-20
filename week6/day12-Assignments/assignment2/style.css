@@ -1,0 +1,132 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#e6eef6;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+}
+
+.wrapper{
+  width:1100px;
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows:auto auto;
+  gap:25px;
+}
+
+/* ================= CARD BASE ================= */
+
+.card{
+  padding:30px;
+  border-radius:12px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  line-height:1.5;
+  box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* ================= GRID POSITIONING ================= */
+
+/* Top Left Big Purple */
+.purple{
+  background:#7541c8;
+  color:#fff;
+  grid-column:1 / 3;
+  grid-row:1 / 2;
+}
+
+/* Top Middle Grey */
+.grey{
+  background:#48556a;
+  color:#fff;
+  grid-column:3 / 4;
+  grid-row:1 / 2;
+}
+
+/* Right Tall Card */
+.kira{
+  background:#fff;
+  color:#333;
+  grid-column:4 / 5;
+  grid-row:1 / 3;   /* Makes it span 2 rows */
+}
+
+/* Bottom Left */
+.jeanette{
+  background:#fff;
+  color:#333;
+  grid-column:1 / 2;
+  grid-row:2 / 3;
+}
+
+/* Bottom Middle Wide */
+.patrick{
+  background:#19212e;
+  color:#fff;
+  grid-column:2 / 4;
+  grid-row:2 / 3;
+}
+
+/* ================= PROFILE ================= */
+
+.profile{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.profile img{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+}
+
+/* ================= TEXT ================= */
+
+h3{
+  font-size:18px;
+  font-weight:600;
+}
+
+h4{
+  font-size:14px;
+  font-weight:600;
+}
+
+p{
+  font-size:14px;
+  opacity:0.8;
+}
+
+span{
+  font-size:12px;
+  opacity:0.7;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+  .wrapper{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .kira{
+    grid-column:auto;
+    grid-row:auto;
+  }
+}
+
+@media(max-width:600px){
+  .wrapper{
+    grid-template-columns:1fr;
+  }
+}

@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:arial;
+}
+
+/* full height layout */
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/*  top area */
+.hero{
+  background:#e9ecef;
+  padding:80px 8%;
+}
+
+/*  heading */
+.hero h1{
+  font-size:48px;
+  margin-bottom:15px;
+}
+
+/* button style */
+.hero button{
+  background:#007bff;
+  color:#fff;
+  border:none;
+  padding:10px 18px;
+  margin-top:15px;
+  cursor:pointer;
+}
+
+.features{
+  display:flex;
+  flex-wrap:wrap;
+  padding:50px 8%;
+  gap:30px;
+  flex:1; 
+}
+
+/* each box */
+.box{
+  flex:1;
+  min-width:250px;
+}
+
+/* grey buttons */
+.box button{
+  background:#6c757d;
+  color:white;
+  border:none;
+  padding:8px 15px;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+/* footer */
+footer{
+  padding:20px 8%;
+  border-top:1px solid #ccc;
+  color:#777;
+  font-size:14px;
+}
+
+/* mobile adjustment */
+@media(max-width:768px){
+  .hero h1{
+    font-size:32px;
+  }
+}
